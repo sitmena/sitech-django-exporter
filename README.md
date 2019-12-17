@@ -61,7 +61,7 @@ You can specify all wkhtmltopdf  [options](http://wkhtmltopdf.org/usage/wkhtmlto
 
 ```python
 options = {
-    'page-size': 'A4',  
+        'page-size': 'A4',  
 	'encoding': 'UTF-8',  
 	'margin-top': '0in',  
 	'margin-right': '0in',  

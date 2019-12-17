@@ -34,6 +34,7 @@ setup(
       zip_safe=False,
       dependency_links=[],
       install_requires=[
-          'setuptools'
+          'setuptools',
+          'pdfkit==0.6.0'
       ]
 )

@@ -56,3 +56,19 @@ pdf = pdf_exporter.from_template('file1.html', False)
 from django.http import HttpResponse
 return HttpResponse(pdf, content_type='application/pdf')
 ```
+
+You can specify all wkhtmltopdf  [options](http://wkhtmltopdf.org/usage/wkhtmltopdf.txt). You can drop '--' in option name. If option without value, use  _None, False_  or  _''_  for dict value:. For repeatable options (incl. allow, cookie, custom-header, post, postfile, run-script, replace) you may use a list or a tuple. With option that need multiple values (e.g. --custom-header Authorization secret) we may use a 2-tuple (see example below).
+
+```python
+options = {
+    'page-size': 'A4',  
+	'encoding': 'UTF-8',  
+	'margin-top': '0in',  
+	'margin-right': '0in',  
+	'margin-bottom': '0in',  
+	'margin-left': '0in',  
+	'dpi': 300,  
+	'no-outline': None
+}
+pdf_exporter.from_template('test.html', 'out.pdf' options=options)
+```

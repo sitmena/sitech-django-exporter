@@ -7,8 +7,10 @@ Run the [pip](https://pip.pypa.io/en/stable/) command to install the latest vers
 ```bash
 $ pip install git+https://github.com/sitmena/sitech-django-exporter.git
 ```
+<br/>
+
 ## PDF Exporter
-### Prerequisites
+### # Prerequisites:
 To use "PDF Exporter" , you need to install the wkhtmltopdf tools:
 
 -   Debian/Ubuntu:
@@ -23,3 +25,5 @@ $ brew install caskroom/cask/wkhtmltopdf
 ```
 
 -   Windows and other options: check wkhtmltopdf  [homepage](http://wkhtmltopdf.org/)  for binary installers
+
+### # Usage

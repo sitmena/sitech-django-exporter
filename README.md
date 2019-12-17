@@ -1,4 +1,5 @@
 
+
 # Sitech Django Exporter
 <br/>
 
@@ -32,10 +33,10 @@ $ brew install caskroom/cask/wkhtmltopdf
 ```python
 from sitech_exporter import pdf_exporter
   
-pdf_exporter.from_template('test.html', 'out.pdf',{
+pdf_exporter.from_template('test.html', 'out.pdf', context={
 	'id': 1, 
 	'object': object
-},request)  
+},request=request)  
 pdf_exporter.from_url('http://google.com', 'out.pdf')  
 pdf_exporter.from_string('Hello!', 'out.pdf')
 ```
